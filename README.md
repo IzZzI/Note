@@ -7,3 +7,8 @@ AS4.0
                 includeCompileClasspath = true  
             }
         }
+javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
