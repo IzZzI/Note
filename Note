@@ -1,0 +1,2 @@
+大概是软重启：
+setprop ctl.restart surfaceflinger; setprop ctl.restart zygote
