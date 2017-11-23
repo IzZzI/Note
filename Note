@@ -1,2 +1,14 @@
-大概是软重启：
-setprop ctl.restart surfaceflinger; setprop ctl.restart zygote
+1.大概是软重启：
+  setprop ctl.restart surfaceflinger; setprop ctl.restart zygote
+
+2.新的 gradle 插件不再支持 annotation processors，如果需要使用需要显式声明:
+
+ javaCompileOptions {
+                includeCompileClasspath = true  
+            }
+        }
+javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath false
+            }
+        }
