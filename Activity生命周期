@@ -1,0 +1,1 @@
+1.当前Activity启动一个透明主题Activity时不会走onStop生命周期
